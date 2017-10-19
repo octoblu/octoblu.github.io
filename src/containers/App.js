@@ -4,7 +4,7 @@ import Banner from "../components/Banner"
 import Flows from "../components/Flows"
 import Header from "../components/Header"
 import Meshblu from "../components/Meshblu"
-import Stacks from "../components/Stacks"
+import Team from "../components/Team"
 import Things from "../components/Things"
 import OpenSource from "../components/OpenSource"
 
@@ -18,6 +18,7 @@ export default class App extends React.Component {
         <Meshblu />
         <Flows />
         <OpenSource />
+        <Team />
       </div>
     )
   }
