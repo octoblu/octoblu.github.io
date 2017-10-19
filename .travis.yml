@@ -1,0 +1,14 @@
+language: node_js
+node_js:
+- '8'
+before_deploy:
+- npm run build
+deploy:
+  provider: pages
+  target_branch: master
+  skip_cleanup: true
+  local_dir: dist
+  github_token:
+    secure: WoZ1PEJqRYUtpnsyYfv7BB4biWKh9/3kwYxf0FgzMlQgZ7/ecN6R7u9E/VXUg8SFT5GqsYbSCxV7VmePHbyw/B893r6izZm2mClhbmKn26XzBiODDAxLkVu3oIo27qFAeMeN3aq4EifOu5kNmmW60uw3yiaQ5I8BIprDGqVueiQU0/V1g1kTz8b62cb157hR/Gt/gNsL9a0GIA2lo0+AByPTTw/nwn5zTMQ4UXZWX8T5uSxqbMrei5vmHHAM97hNouzGAAiDwSIvH6UJsQUCi3F+6nqtrNyv3ZvdrGnIXy9Ou0w1lWKBJh1HF8Z+PcSCHC9u/NJx1PcRU3cJkVOD1/aKeXSAnru+3O6UyImxdz/jUf8GaUOP/h/LPJ5Yv9llIm0YB86UA7e39ML/NqbdlGi7x7eKJh/4kQ+P2FG4sphIllw3NZdMN6BhlOginGF6v/PMhvlFnP7PWz6Rza/7AzxzzBBGNwABD2Q7L3CNCNcjss4LtTwaApQVu0s0HQh3JAsfYDnGxgmfVC2g/WmnGAAm5V41yUtb5bnz6evR/ACMOlGajw3Q2450UUPmLIluWxeHhBf3/cQFD2vq/5k4WpHmbl4lkt8l/Vwl9QOF+fQoxDMu9BAGIzlLIlP92c1Ew8cX0KBAflsn34v4LchjywUr5z7XE15VlZD3TLaklk0=
+  on:
+    branch: development
