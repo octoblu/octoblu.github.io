@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react"
 
 import Banner from "../components/Banner"
 import Flows from "../components/Flows"
@@ -15,8 +15,8 @@ export default class App extends React.Component {
         <Header />
         <Banner />
         <Things />
-        <Meshblu />
         <Flows />
+        <Meshblu />
         <OpenSource />
         <Team />
       </div>
