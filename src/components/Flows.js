@@ -6,7 +6,8 @@ import Container from "./Container"
 const Section = styled.section`
   background: #fff;
   position: relative;
-  min-height: 475px;
+  min-height: 575px;
+  display: flex;
 `
 
 const SectionTitle = styled.h3`
@@ -20,7 +21,7 @@ const SectionTitle = styled.h3`
 const SectionBody = styled.div`
   color: #fff;
   max-width: 24rem;
-  padding: 6rem 0;
+  ${'' /* padding: 6rem 0; */}
 
   p {
     line-height: 1.5;
@@ -39,7 +40,7 @@ const Stripes = styled.div`
   }
 
   svg {
-    height: 475px;
+    height: 575px;
     width: 100%;
   }
 `
@@ -62,6 +63,13 @@ const Browser = styled.div`
   width: 30rem;
   height: 20rem;
   background: rgba(255, 255, 255, 0);
+`
+
+const FlowsContainer = styled(Container)`
+  flex: 1;
+  display: flex;
+  align-self: center;
+  align-items: center;
 `
 
 const Flows = () => (
@@ -93,7 +101,7 @@ const Flows = () => (
       </ForegroundStripe>
     </Stripes>
 
-    <Container>
+    <FlowsContainer>
       <SectionBody>
         <SectionTitle>Flows</SectionTitle>
         <p>
@@ -105,7 +113,7 @@ const Flows = () => (
       </SectionBody>
 
       <Browser />
-    </Container>
+    </FlowsContainer>
   </Section>
 )
 

@@ -4,11 +4,11 @@ import styled from "react-emotion"
 import Container from "./Container"
 
 const Section = styled.section`
-  background: #000;
+  background: #FFF;
   padding: 10rem 0;
   position: relative;
   text-align: center;
-  color: #fff;
+  color: #000;
 
   p {
     line-height: 1.5;
@@ -22,15 +22,16 @@ const SectionTitle = styled.h3`
   font-weight: 600;
   margin-bottom: 1.5rem;
 `
+
 const Link = styled.a`
-  background: #fff;
-  color: #000;
+  background: #0b63a7;
+  color: #FFF;
   text-decoration: none;
   padding: 1.5rem 2.5rem;
   margin-top: 1.5rem;
 
   &:hover {
-    background: #ffafa3;
+    background: #042990;
   }
 `
 
@@ -42,7 +43,6 @@ const Meshblu = () => (
         Meshblu is a secure cross-protocol, machine-to-machine instant messaging
         platform with an open plugin architecture for connectors.
       </p>
-
       <Link href="http://octoblu.github.io/meshblu/" title="Meshblu">
         Learn More
       </Link>

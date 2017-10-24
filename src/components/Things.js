@@ -27,9 +27,9 @@ const SectionBody = styled.div`
 `
 
 const ThingGrid = styled.div`
-  position: absolute;
+  ${'' /* position: absolute;
   top: -7rem;
-  right: 0;
+  right: 0; */}
   max-width: 22.5rem;
   ${'' /* background: #FFF; */}
   ${'' /* box-shadow: 0 2px 10px rgba(0,0,0,0.2); */}
