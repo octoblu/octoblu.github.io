@@ -2,12 +2,10 @@ import React from "react"
 import styled from "react-emotion"
 
 import Container from "./Container"
+import Section from "./Section"
 
-const Section = styled.section`
-  background: #FFF;
-  color: #000;
-  padding: 10rem 0;
-  position: relative;
+const Wrapper = styled.section`
+  ${Section}
 `
 
 const SectionTitle = styled.h3`
@@ -43,7 +41,7 @@ const ThingGrid = styled.div`
 
 
 const Things = () => (
-  <Section>
+  <Wrapper>
     <Container>
       <SectionBody>
 
@@ -75,7 +73,7 @@ const Things = () => (
         <img title="Particle" src="https://icons.octoblu.com/channel/particle.svg"/>
       </ThingGrid>
     </Container>
-  </Section>
+  </Wrapper>
 )
 
 export default Things

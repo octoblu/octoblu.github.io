@@ -2,13 +2,12 @@ import React from "react"
 import styled from "react-emotion"
 
 import Container from "./Container"
+import Section from "./Section"
 
-const Section = styled.section`
-  background: #FFF;
-  padding: 10rem 0;
-  position: relative;
+const Wrapper = styled.section`
+  ${Section}
+
   text-align: center;
-  color: #000;
 
   p {
     line-height: 1.5;
@@ -36,7 +35,7 @@ const Link = styled.a`
 `
 
 const Meshblu = () => (
-  <Section>
+  <Wrapper>
     <Container column>
       <SectionTitle>Meshblu</SectionTitle>
       <p>
@@ -47,7 +46,7 @@ const Meshblu = () => (
         Learn More
       </Link>
     </Container>
-  </Section>
+  </Wrapper>
 )
 
 export default Meshblu

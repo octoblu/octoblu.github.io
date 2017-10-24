@@ -2,14 +2,14 @@ import React from "react"
 import styled from "react-emotion"
 
 import Container from "./Container"
+import Section from "./Section"
 
-const Section = styled.section`
+const Wrapper = styled.div`
+  ${Section}
+
   background-image: url(http://octoblu.github.io/meshblu/img/team2.png);
   background-size: cover;
-  padding: 10rem 0;
-  position: relative;
-  text-align: center;
-  color: #FFF;
+  background-attachment: fixed;
 
   p {
     line-height: 1.5;
@@ -17,21 +17,23 @@ const Section = styled.section`
   }
 `
 const SectionOverlay = styled.div`
+  ${Section}
+
   position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
 
+  text-align: center;
+  color: #FFF;
+  
   height: 100%;
   width: 100%;
 
-  min-height: 20rem;
 
   background: rgba(0,0,0,.7);
 `
-
-
 
 const SectionTitle = styled.h3`
   font-family: 'Montserrat', sans-serif;
@@ -41,7 +43,7 @@ const SectionTitle = styled.h3`
 `
 
 const Team = () => (
-  <Section>
+  <Wrapper>
     <SectionOverlay>
       <Container column>
         <SectionTitle>Our Team</SectionTitle>
@@ -50,7 +52,7 @@ const Team = () => (
         </p>
       </Container>
     </SectionOverlay>
-  </Section>
+  </Wrapper>
 )
 
 export default Team

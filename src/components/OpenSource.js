@@ -2,13 +2,14 @@ import React from "react"
 import styled from "react-emotion"
 
 import Container from "./Container"
+import Section from "./Section"
 
-const Section = styled.section`
+const Wrapper = styled.div`
+  ${Section}
+
   background: #ffafa3;
-  padding: 10rem 0;
-  position: relative;
-  text-align: center;
   color: #333;
+  text-align: center;
 
   p {
     line-height: 1.5;
@@ -36,7 +37,7 @@ const Link = styled.a`
 `
 
 const OpenSource = () => (
-  <Section>
+  <Wrapper>
     <Container column>
       <SectionTitle>Open Source</SectionTitle>
       <p>
@@ -45,7 +46,7 @@ const OpenSource = () => (
 
       <Link href="http://github.com/octoblu/octoblu" title="octoblu">Get Started</Link>
     </Container>
-  </Section>
+  </Wrapper>
 )
 
 export default OpenSource
