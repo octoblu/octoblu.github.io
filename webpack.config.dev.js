@@ -72,7 +72,7 @@ module.exports = {
         exclude: /\/favicon.ico$/,
         loader: "file-loader",
         query: {
-          name: "static/[name].[hash:8].[ext]",
+          name: "/static/[name].[ext]",
         },
       },
       // A special case for favicon.ico to place it into build root directory.

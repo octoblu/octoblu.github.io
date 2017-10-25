@@ -112,7 +112,9 @@ const Flows = () => (
         </p>
       </SectionBody>
 
-      <Browser />
+      <Browser>
+        <img src="/static/hue-slack-belkin.png" />
+      </Browser>
     </FlowsContainer>
   </Section>
 )
