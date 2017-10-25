@@ -13,7 +13,15 @@ import slackImg from "./images/slack.svg"
 import teslaImg from "./images/tesla.svg"
 import uberImg from "./images/uber.svg"
 import wordpressImg from "./images/wordpress.svg"
+import beaconImg from "./images/beacon-receiver.svg"
+import githubImg from "./images/github.svg"
+import hueLightImg from "./images/hue-light.svg"
+import johnnyfiveImg from "./images/johnnyfive.svg"
+import msmlImg from "./images/msml.svg"
+import skypeImg from "./images/skype.svg"
 import youtubeImg from "./images/youtube.svg"
+import wemoSwitchImg from "./images/wemo-switch.svg"
+
 
 import Container from "./Container"
 import Section from "./Section"
@@ -72,23 +80,20 @@ const Things = () => (
         <img title="Google Drive" src={driveImg}/>
         <img title="Dropbox" src={dropboxImg}/>
         <img title="Facebook" src={facebookImg}/>
-        <img title="Github (beta)" src="https://icons.octoblu.com/device/github.svg"/>
-        <img title="Meshblu (beta)" src="https://icons.octoblu.com/channel/meshblu-http.svg"/>
-        <img title="Skype For Business" src="https://icons.octoblu.com/device/skype.svg"/>
-        <img title="Johnny-Five" src="https://icons.octoblu.com/device/johnnyfive.svg"/>
-        <img title="Slack" src="https://icons.octoblu.com/channel/slack.svg"/>
-        <img title="Facebook" src="https://icons.octoblu.com/channel/facebook.svg"/>
-        <img title="Youtube" src="https://icons.octoblu.com/channel/youtube.svg"/>
-        <img title="Exchange" src="https://cdn.octoblu.com/icons/slurries/exchange.svg"/>
-        <img title="Wordpress" src="https://icons.octoblu.com/channel/wordpress.svg"/>
+        <img title="Github (beta)" src={githubImg}/>
+        <img title="Meshblu" src={meshbluImg}/>
+        <img title="Skype For Business" src={skypeImg}/>
+        <img title="Johnny-Five" src={johnnyfiveImg}/>
+        <img title="Slack" src={slackImg}/>
+        <img title="Youtube" src={youtubeImg}/>
+        <img title="Wordpress" src={wordpressImg}/>
         <img title="Microsoft" src={biztalkImg}/>
-        <img title="Google-Drive" src="https://icons.octoblu.com/channel/google-drive.svg"/>
-        <img title="Dropbox" src="https://icons.octoblu.com/channel/dropbox.svg"/>
-        <img title="Nest" src="https://icons.octoblu.com/channel/nest.svg"/>
-        <img title="Philips Hue Light" src="https://icons.octoblu.com/device/hue-light.svg"/>
-        <img title="Microsoft Azure ML" src="https://icons.octoblu.com/device/msml.svg"/>
-        <img title="Wemo Switch" src="https://icons.octoblu.com/device/wemo-switch.svg"/>
-        <img title="Beacon Receiver" src="https://icons.octoblu.com/device/beacon-receiver.svg"/>
+        <img title="Dropbox" src={dropboxImg}/>
+        <img title="Nest" src={nestImg}/>
+        <img title="Philips Hue Light" src={hueLightImg}/>
+        <img title="Microsoft Azure ML" src={msmlImg}/>
+        <img title="Wemo Switch" src={wemoSwitchImg}/>
+        <img title="Beacon Receiver" src={beaconImg}/>
       </ThingGrid>
     </Container>
   </Wrapper>
