@@ -8,7 +8,7 @@ import Container from "./Container"
 const Section = styled.section`
   background: #fff;
   position: relative;
-  min-height: 575px;
+  min-height: 675px;
   display: flex;
 `
 
@@ -42,7 +42,7 @@ const Stripes = styled.div`
   }
 
   svg {
-    height: 575px;
+    height: 675px;
     width: 100%;
   }
 `
@@ -60,11 +60,15 @@ const ForegroundStripe = styled.div`
 `
 
 const Browser = styled.div`
-  border: 1px solid rgba(0, 0, 0, 0.31);
-  border-top-width: 3rem;
+  ${'' /* border: 1px solid rgba(0, 0, 0, 0.31); */}
+  ${'' /* border-top-width: 3rem; */}
   width: 30rem;
   height: 20rem;
   background: rgba(255, 255, 255, 0);
+
+  img {
+    width: 478px;
+  }
 `
 
 const FlowsContainer = styled(Container)`

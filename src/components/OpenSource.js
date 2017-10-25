@@ -7,8 +7,8 @@ import Section from "./Section"
 const Wrapper = styled.div`
   ${Section}
 
-  background: #ffafa3;
-  color: #333;
+  background: #000;
+  color: #FFF;
   text-align: center;
 
   p {
@@ -28,11 +28,12 @@ const Link = styled.a`
   text-decoration: none;
   padding: 1.5rem 2.5rem;
   margin-top: 1.5rem;
-  background: #333;
-  color: #FFF;
+  background: #FFF;
+  color: #000;
+
 
   &:hover {
-    background-color: #111;
+    background-color: #CCC;
   }
 `
 
