@@ -16,9 +16,10 @@ const Section = styled.header`
   align-items: center;
   width: 100%;
 
-  a { 
+  a {
     color: #0366d6;
     text-decoration: none;
+
   }
 `
 

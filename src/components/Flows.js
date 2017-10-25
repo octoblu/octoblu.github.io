@@ -1,7 +1,9 @@
 import React from "react"
 import styled from "react-emotion"
+import flowImg from './images/hue-slack-belkin.png'
 
 import Container from "./Container"
+
 
 const Section = styled.section`
   background: #fff;
@@ -113,7 +115,7 @@ const Flows = () => (
       </SectionBody>
 
       <Browser>
-        <img src="/static/hue-slack-belkin.png" />
+        <img src={flowImg} />
       </Browser>
     </FlowsContainer>
   </Section>

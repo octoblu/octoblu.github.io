@@ -1,6 +1,20 @@
 import React from "react"
 import styled from "react-emotion"
 
+
+import biztalkImg from "./images/biztalk.svg"
+import chromecastImg from "./images/chromecast.svg"
+import driveImg from "./images/google-drive.svg"
+import dropboxImg from "./images/dropbox.svg"
+import facebookImg from "./images/facebook.svg"
+import meshbluImg from "./images/meshblu-http.svg"
+import nestImg from "./images/nest.svg"
+import slackImg from "./images/slack.svg"
+import teslaImg from "./images/tesla.svg"
+import uberImg from "./images/uber.svg"
+import wordpressImg from "./images/wordpress.svg"
+import youtubeImg from "./images/youtube.svg"
+
 import Container from "./Container"
 import Section from "./Section"
 
@@ -52,9 +66,12 @@ const Things = () => (
       </SectionBody>
 
       <ThingGrid>
-        <img title="Chromecast" src="../../public/image/chromecast.svg"/>
-        <img title="Tesla" src="../../public/image/tesla.svg"/>
-        <img title="Uber" src="https://icons.octoblu.com/channel/uber.svg"/>
+        <img title="Chromecast" src={chromecastImg}/>
+        <img title="Tesla" src={teslaImg}/>
+        <img title="Uber" src={uberImg}/>
+        <img title="Google Drive" src={driveImg}/>
+        <img title="Dropbox" src={dropboxImg}/>
+        <img title="Facebook" src={facebookImg}/>
         <img title="Github (beta)" src="https://icons.octoblu.com/device/github.svg"/>
         <img title="Meshblu (beta)" src="https://icons.octoblu.com/channel/meshblu-http.svg"/>
         <img title="Skype For Business" src="https://icons.octoblu.com/device/skype.svg"/>
@@ -64,7 +81,7 @@ const Things = () => (
         <img title="Youtube" src="https://icons.octoblu.com/channel/youtube.svg"/>
         <img title="Exchange" src="https://cdn.octoblu.com/icons/slurries/exchange.svg"/>
         <img title="Wordpress" src="https://icons.octoblu.com/channel/wordpress.svg"/>
-        <img title="Microsoft" src="https://icons.octoblu.com/channel/biztalk.svg"/>
+        <img title="Microsoft" src={biztalkImg}/>
         <img title="Google-Drive" src="https://icons.octoblu.com/channel/google-drive.svg"/>
         <img title="Dropbox" src="https://icons.octoblu.com/channel/dropbox.svg"/>
         <img title="Nest" src="https://icons.octoblu.com/channel/nest.svg"/>

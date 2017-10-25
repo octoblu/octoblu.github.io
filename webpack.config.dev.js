@@ -64,17 +64,27 @@ module.exports = {
         use: ["style-loader", "css-loader"],
       },
       {
-        test: /\.(ico|jpg|png|gif|eot|otf|svg|ttf|woff|woff2)(\?.*)?$/,
-        include: [
-          path.join(__dirname, "src"),
-          path.join(__dirname, "node_modules"),
-        ],
-        exclude: /\/favicon.ico$/,
-        loader: "file-loader",
-        query: {
-          name: "/static/[name].[ext]",
-        },
-      },
+       test: /\.(png|jpg|gif|svg)$/,
+       use: [
+         {
+           loader: 'file-loader',
+           options: {}
+         }
+       ]
+     },
+      // {
+      //   test: /\.(ico|jpg|png|gif|eot|otf|svg|ttf|woff|woff2)(\?.*)?$/,
+      //   include: [
+      //     path.join(__dirname, "public"),
+      //   ],
+      //   exclude: /\/favicon.ico$/,
+      //   use: {
+      //     loader: 'url-loader',
+      //     options: {
+      //       name: "[name].[ext]",
+      //     },
+      //   },
+      // },
       // A special case for favicon.ico to place it into build root directory.
       {
         test: /\/favicon.ico$/,
